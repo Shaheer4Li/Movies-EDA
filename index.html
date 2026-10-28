@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Analyst</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading" id="heading">
+        <div class="hh">My Movie Analysis</div>
+        <div class="bb">What makes a movie truly great? Is it the audience's love, the critics' approval, or the
+            millions it earns
+            at the box office?
+
+            Welcome to my Movie Analysis Dashboard, where I explore these questions using the IMDb Top 1000 Movies
+            dataset from Kaggle. From rating battles and box office records to genre trends and movie runtimes, let's
+            dive into the data behind some of cinema's most celebrated films and see what the numbers reveal.</div>
+    </div>
+    <div class="cont" id="overview">
+        <div class="imag">
+            <img src="Assets/Behind-the-Scenes Cinema Noir.png" alt="">
+        </div>
+        <ul class="stats-list">
+            <li class="box">Movies Analyyzed <br> 998 </li>
+            <li class="box">Average Rating: <br> 7.95</li>
+            <li class="box">Average Box Office: <br> $66246320</li>
+            <li class="box">Released: <br> 1920 - 2020</li>
+        </ul>
+    </div>
+    <div class="rating analysis-section" id="rating-distribution">
+        <h1>Rating Distribution</h1>
+        <p>this portion will display the rating distribution chart to analyze how the ratings of the movies are
+            distributed in the dataset</p>
+        <div class="chart-row">
+            <img class="chart-image" src="Assets/hist_imdb.png" alt="Rating Distribution Chart">
+            <img class="chart-image" src="Assets/kde_imdb.png" alt="Rating Distribution Chart">
+        </div>
+    </div>
+    <div class="analysis-section" id="audience-critics">
+        <h1>Audience vs Critic Ratings</h1>
+        <p>this portion will display the comparison between audience and critic ratings, First graphs Shows the plotting
+            of each movie based on their respective ratings. </p>
+        <div class="chart-main"><img class="chart-image" src="Assets/Audience vs critics.png"
+                alt="Rating Distribution Chart"></div>
+        <div class="comparison-row">
+            <div class="comparison-card"><img class="chart-image" src="Assets/cult classics.png"
+                    alt="Rating Distribution Chart"> As you can see here the difference
+                between audience and critic ratings is in postive becuase The formuala used is (Audience Rating - Critic
+                Rating) so these are movies where the audience rated them higher than the critics.</div>
+            <div class="comparison-card"><img class="chart-image" src="Assets/critic.png"
+                    alt="Rating Distribution Chart"> For this graph, we can observe that
+                difference is negative.so according to the formula (Audience Rating - Critic Rating), these are movies
+                where the critics rated them higher than the audience.</div>
+        </div>
+    </div>
+
+    <div class="analysis-section decade-section" id="decade-analysis"><img class="chart-image" src="Assets/decade.png"
+            alt="Rating Distribution Chart">
+        <h1>Decade-wise Analysis</h1>
+        this graph shows the trend of movie ratings across different decades by using lollipop graph by combining Vline
+        and scatter
+    </div>
+
+    <div class="analysis-section" id="genre-analysis">
+        <h1>Genre War⚔</h1>
+        <p>this portion will display the genre-wise analysis of the movies in the dataset</p>
+        <div class="genre-row">
+            <img class="chart-image genre-chart" src="Assets/pie.png" alt="Rating Distribution Chart">
+            <div class="genre-description"><img class="chart-image genre-chart" src="Assets/voilin.png"
+                    alt="Rating Distribution Chart"> this graph shows rating across genres with density using voilin
+                graph. as you can see Drama genre has the highest rating but its density is high at somewhere around
+                7.75 and 8.1 on the other hand mystery genre has more stable shape</div>
+        </div>
+    </div>
+
+    <div class="analysis-section revenue-section" id="revenue-analysis">
+        <h1>Revenue vs Rating</h1>
+        this portion will display the revenue vs rating analysis of the movies in the dataset
+        <img class="chart-image revenue-chart" src="Assets/reg.png" alt="Rating Distribution Chart">
+    </div>
+
+</body>
+
+</html>
